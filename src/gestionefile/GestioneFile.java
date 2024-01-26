@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  *
  * @author Luca Brunori
- * @version 12/01/23
+ * @version 26/01/23
  */
 public class GestioneFile {
 
@@ -30,11 +30,10 @@ public class GestioneFile {
         
         scanner.close();
         //3) SCRITTURA
-        Scrittore scrittore = new Scrittore("output.csv");
+        Scrittore scrittore = new Scrittore("output.csv", username, password);
         Thread threadScrittore = new Thread(scrittore);
         threadScrittore.start();
-        //FileInputStream inputStream = new FileInputStream(inFile);
-        //commento di prova
+
     }
     
 }
