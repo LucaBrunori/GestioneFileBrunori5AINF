@@ -34,6 +34,7 @@ public class GestioneFile {
         Thread threadScrittore = new Thread(scrittore);
         threadScrittore.start();
         //FileInputStream inputStream = new FileInputStream(inFile);
+        //commento di prova
     }
     
 }
