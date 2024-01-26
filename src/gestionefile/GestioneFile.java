@@ -27,11 +27,6 @@ public class GestioneFile {
         System.out.print("Inserisci la password: ");
         String password = scanner.nextLine();
         
-        if (checkLogin(username, password)) {
-            System.out.println("Accesso consentito. Benvenuto, " + username + "!");
-        } else {
-            System.out.println("Accesso negato. Controlla l'username e la password e riprova.");
-        }
         
         scanner.close();
         //3) SCRITTURA
@@ -39,10 +34,6 @@ public class GestioneFile {
         Thread threadScrittore = new Thread(scrittore);
         threadScrittore.start();
         //FileInputStream inputStream = new FileInputStream(inFile);
-    }
-
-    private static boolean checkLogin(String username, String password) {
-        throw new UnsupportedOperationException("Not supported yet.");
     }
     
 }
