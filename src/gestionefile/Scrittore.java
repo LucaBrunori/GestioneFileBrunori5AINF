@@ -8,8 +8,8 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author MC
- * @version 12/01/23
+ * @author Luca Brunori
+ * @version 26/01/23
  */
 
 public class Scrittore implements Runnable{

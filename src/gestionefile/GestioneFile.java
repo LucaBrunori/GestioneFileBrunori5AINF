@@ -1,6 +1,7 @@
 package gestionefile;
 
 import java.util.Scanner;
+
 /**
  *
  * @author Luca Brunori
@@ -16,6 +17,7 @@ public class GestioneFile {
         //1)LETTURA
         Lettore lettore = new Lettore("user.json");
         lettore.start();
+        System.out.print("File letto");
         
         //2)ELABORAZIONE
         //INSERIRE US PWD
@@ -34,6 +36,10 @@ public class GestioneFile {
         Thread threadScrittore = new Thread(scrittore);
         threadScrittore.start();
 
+        String percorsoInput = "output.csv"; //file da copiare
+        String percorsoOutput = "copia.csv"; //file destinatario
+        Copiafile copiafile = new Copiafile("output.csv", "copia.csv");
+        copiafile.copiaFile();
     }
-    
+
 }
